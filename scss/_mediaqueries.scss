@@ -67,7 +67,7 @@
             align-items: center;
             justify-content: center;
 
-            
+
             a {
                 width: 99%;
                 height: max-content;
@@ -75,8 +75,8 @@
                 font-weight: 500;
                 color: white;
                 background-color: #2a2a2a;
-        
-        
+
+
                 display: flex;
                 /*deja que el tamano del a sea igual al del contenedor*/
                 justify-content: center;
@@ -116,6 +116,12 @@
 @media (max-width:480px) {
 
     /* ---------- NAV ---------- */
+    // Logo string
+    .logoString {
+        width: 135px;
+        padding: 19px 20px;
+    }
+
     // Boton Jugar
     .nav_listRight {
         .nav_listRight-btnJugar {
@@ -127,7 +133,7 @@
 
     // Enlaces del boton hamburguesa
     .nav_listMain_mobile {
-        li {    
+        li {
             a {
                 font-size: 12px;
             }
@@ -136,22 +142,24 @@
     }
 
     /* ---------- FOOTER ---------- */
-    .footer_redes_sociales{
-        a{
+    .footer_redes_sociales {
+        a {
             padding: 0 10px;
-            img{
+
+            img {
                 padding: 12px 0;
                 width: 26px;
             }
         }
     }
 
-    .footer_list{
+    .footer_list {
         margin-top: 25px;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        li{
+
+        li {
             padding: 0 5px;
 
         }
