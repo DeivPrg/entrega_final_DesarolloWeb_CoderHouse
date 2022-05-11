@@ -51,7 +51,7 @@
         top: 58px;
         bottom: 0;
         left: 0;
-        background-color: #979797;
+        background-color: #bdbdbd;
         padding-bottom: 1px;
 
         position: absolute;
@@ -115,6 +115,7 @@
 //----- 480px -----//
 @media (max-width:480px) {
 
+    /* ---------- NAV ---------- */
     // Boton Jugar
     .nav_listRight {
         .nav_listRight-btnJugar {
@@ -128,9 +129,31 @@
     .nav_listMain_mobile {
         li {    
             a {
-                font-size: 13px;
+                font-size: 12px;
             }
         }
 
+    }
+
+    /* ---------- FOOTER ---------- */
+    .footer_redes_sociales{
+        a{
+            padding: 0 10px;
+            img{
+                padding: 12px 0;
+                width: 26px;
+            }
+        }
+    }
+
+    .footer_list{
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        li{
+            padding: 0 5px;
+
+        }
     }
 }

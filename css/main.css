@@ -86,6 +86,57 @@ nav {
   display: none;
   width: 30px; }
 
+footer {
+  width: 100%;
+  background-color: black;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer_redes_sociales {
+  width: 100%;
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer_redes_sociales a {
+    padding: 0 20px; }
+    .footer_redes_sociales a img {
+      padding: 15px 0;
+      width: 32px; }
+
+.logos_footer {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer_list {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center; }
+  .footer_list li {
+    padding: 0 20px; }
+    .footer_list li a {
+      color: #ffffffb4;
+      font-weight: 300; }
+
+.footer_img_teen {
+  margin-top: 40px;
+  width: 88px;
+  background-color: #de7e00; }
+
+footer p {
+  color: #ffffffb4;
+  padding: 0 25px;
+  margin-top: 35px;
+  font-size: 10.5px;
+  font-weight: 300;
+  text-align: center; }
+
 @media screen and (max-width: 1024px) {
   /* ---------- NAV ---------- */
   nav {
@@ -114,7 +165,7 @@ nav {
     top: 58px;
     bottom: 0;
     left: 0;
-    background-color: #2a2a2a;
+    background-color: #bdbdbd;
     padding-bottom: 1px;
     position: absolute;
     display: flex;
@@ -123,7 +174,6 @@ nav {
     /*Lo pone por encima de todo*/ }
     .nav_listMain_mobile li {
       height: max-content;
-      padding: 1px 2px;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -133,7 +183,7 @@ nav {
         font-size: 15px;
         font-weight: 500;
         color: white;
-        background-color: #f19100;
+        background-color: #2a2a2a;
         display: flex;
         /*deja que el tamano del a sea igual al del contenedor*/
         justify-content: center;
@@ -151,9 +201,23 @@ nav {
     display: none; } }
 
 @media (max-width: 480px) {
+  /* ---------- NAV ---------- */
   .nav_listRight .nav_listRight-btnJugar {
     background-color: #f19100;
     color: #000000;
     padding: 22px 32px; }
   .nav_listMain_mobile li a {
-    font-size: 13px; } }
+    font-size: 12px; }
+  /* ---------- FOOTER ---------- */
+  .footer_redes_sociales a {
+    padding: 0 10px; }
+    .footer_redes_sociales a img {
+      padding: 12px 0;
+      width: 26px; }
+  .footer_list {
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+    .footer_list li {
+      padding: 0 5px; } }
