@@ -1,0 +1,136 @@
+//========== MEDIA QUERIES ==========//
+
+//----- 1440px -----//
+@media (max-width:1440px) {}
+
+//----- 1024px -----//
+@media screen and (max-width:1024px) {
+
+    /* ---------- NAV ---------- */
+    // Nav 
+    nav {
+        justify-content: none;
+        flex: auto;
+    }
+
+    // Logo espada
+    .logoSword {
+        display: none;
+    }
+
+    // ----------------------//
+
+    /* Nav Hamburguesa */
+    .check-btn img {
+        margin-left: 15px;
+        display: block;
+        width: 30px;
+    }
+
+
+    .img_boton_hamburguesa {
+        width: 10px;
+    }
+
+    /* Al apretar el icono hamburguesa muestro el nav mobile */
+    .nav_input:checked+.nav_listMain_mobile {
+        clip-path: circle(100% at center);
+    }
+
+    /* escondo el nav principal */
+    .nav_listMain {
+        display: none;
+    }
+
+    /* hago visible el nav mobile */
+    .nav_listMain_mobile {
+        display: block;
+        // overflow: hidden;
+        width: 75%;
+        height: max-content;
+        top: 58px;
+        bottom: 0;
+        left: 0;
+        background-color: #2a2a2a;
+        padding-bottom: 1px;
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        clip-path: circle(0 at center);
+        /*Lo pone por encima de todo*/
+
+        li {
+            height: max-content;
+            padding: 1px 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+            a {
+                width: 99%;
+                height: max-content;
+                font-size: 15px;
+                font-weight: 500;
+                color: white;
+                background-color: #f19100;
+        
+        
+                display: flex;
+                /*deja que el tamano del a sea igual al del contenedor*/
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+
+
+
+    .nav_listMain_mobile li {
+        height: max-content;
+        padding: 1px 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+//----- 768px -----//
+@media (max-width:768px) {
+
+    /* ---------- NAV ---------- */
+    // Boton Iniciar sesion
+    .link_is {
+        display: none;
+    }
+
+}
+
+
+//----- 480px -----//
+@media (max-width:480px) {
+
+    // Boton Jugar
+    .nav_listRight {
+        .nav_listRight-btnJugar {
+            background-color: #f19100;
+            color: #000000;
+            padding: 22px 32px;
+        }
+    }
+
+    // Enlaces del boton hamburguesa
+    .nav_listMain_mobile {
+        li {    
+            a {
+                font-size: 13px;
+            }
+        }
+
+    }
+}

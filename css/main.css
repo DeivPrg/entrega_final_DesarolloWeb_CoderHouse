@@ -1,0 +1,159 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none; }
+
+s
+ul, ol {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.floatLeft {
+  float: left;
+  padding: .5em .5em .5em 0; }
+
+.floatRight {
+  float: right;
+  padding: .5em 0 .5em .5em; }
+
+img {
+  width: 100px; }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
+.main-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  color: #ffffff;
+  font-size: 12px; }
+
+nav {
+  height: 58px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/* Logos Medieval Sword */
+.logoSword {
+  width: 11px;
+  margin-left: 25px; }
+
+.logoString {
+  width: 170px;
+  padding: 19px 20px; }
+
+/* Nav list */
+.link_nav {
+  color: #ffffffb4;
+  letter-spacing: 0.4px;
+  padding: 22px 30px; }
+  .link_nav:hover {
+    color: #ffffff; }
+
+.nav_listMain {
+  display: flex;
+  flex: 1; }
+
+.nav_listRight {
+  display: flex;
+  /* boton jugar */ }
+  .nav_listRight .nav_listRight-btnJugar {
+    background-color: #f19100;
+    color: #000000;
+    padding: 22px 48px; }
+    .nav_listRight .nav_listRight-btnJugar:hover {
+      color: #ffffff; }
+
+/* Menu Hamburguesa */
+.nav_listMain_mobile {
+  display: none; }
+
+#check {
+  display: none; }
+
+.check-btn img {
+  display: none;
+  width: 30px; }
+
+@media screen and (max-width: 1024px) {
+  /* ---------- NAV ---------- */
+  nav {
+    justify-content: none;
+    flex: auto; }
+  .logoSword {
+    display: none; }
+  /* Nav Hamburguesa */
+  .check-btn img {
+    margin-left: 15px;
+    display: block;
+    width: 30px; }
+  .img_boton_hamburguesa {
+    width: 10px; }
+  /* Al apretar el icono hamburguesa muestro el nav mobile */
+  .nav_input:checked + .nav_listMain_mobile {
+    clip-path: circle(100% at center); }
+  /* escondo el nav principal */
+  .nav_listMain {
+    display: none; }
+  /* hago visible el nav mobile */
+  .nav_listMain_mobile {
+    display: block;
+    width: 75%;
+    height: max-content;
+    top: 58px;
+    bottom: 0;
+    left: 0;
+    background-color: #2a2a2a;
+    padding-bottom: 1px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    clip-path: circle(0 at center);
+    /*Lo pone por encima de todo*/ }
+    .nav_listMain_mobile li {
+      height: max-content;
+      padding: 1px 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .nav_listMain_mobile li a {
+        width: 99%;
+        height: max-content;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        background-color: #f19100;
+        display: flex;
+        /*deja que el tamano del a sea igual al del contenedor*/
+        justify-content: center;
+        align-items: center; }
+  .nav_listMain_mobile li {
+    height: max-content;
+    padding: 1px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+  /* ---------- NAV ---------- */
+  .link_is {
+    display: none; } }
+
+@media (max-width: 480px) {
+  .nav_listRight .nav_listRight-btnJugar {
+    background-color: #f19100;
+    color: #000000;
+    padding: 22px 32px; }
+  .nav_listMain_mobile li a {
+    font-size: 13px; } }

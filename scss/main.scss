@@ -1,0 +1,33 @@
+//Reset Estilos del Navegador
+@import "reset";
+//Fuente roboto a todos los textos
+@import "font";
+//Variables para el proyecto
+@import "variables";
+
+//----------------------------------------------------//
+
+//----- Contenedor del main -----//
+.main-wrapper{
+    width: 100%;
+    background-color: #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+//====== NAV ======//
+@import "nav";
+
+//====== MEDIA QUERIES ======//
+@import "mediaqueries" ;
+
+
+
+
+
+
+
+
+
+
+
