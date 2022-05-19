@@ -105,12 +105,54 @@
         .header-div {
             padding: 45px;
             width: 400px;
+
             .header-tile {
                 font-size: 25px;
             }
 
             p {
                 font-size: 14px;
+            }
+        }
+    }
+
+    //----------------------------------------------------//
+
+    //------- MAIN ------//
+
+    // seccion eventos//
+    .seccion-eventos {
+        height: 500px;
+
+        .eventos-conteiner {
+
+            img {
+                width: 400px
+            }
+
+            .eventos-text {
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .eventos-listas {
+
+                    ul {
+                        padding: 20px;
+
+                        li {
+                            font-size: 13.5px;
+                            font-weight: 400;
+                            padding: 7px
+                        }
+
+                        .eventos-li-fechas {
+                            color: #f8c47b;
+                            font-weight: 300;
+                        }
+                    }
+                }
             }
         }
     }
@@ -129,7 +171,7 @@
     }
 
 
-    
+
     //------ HEADER ------//
     header {
         height: 400px;
@@ -137,6 +179,7 @@
         .header-div {
             padding: 40px;
             width: 350px;
+
             .header-tile {
                 font-size: 23px;
             }
@@ -147,6 +190,47 @@
         }
     }
 
+        //------- MAIN ------//
+
+    // seccion eventos//
+    .seccion-eventos {
+        height: 570px;
+
+        .eventos-conteiner {
+            flex-direction: column;
+            margin: 30px 0;
+
+            img {
+                width: 340px
+            }
+
+            .eventos-text {
+
+                h3 {
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+
+                .eventos-listas {
+
+                    ul {
+                        padding: 15px;
+
+                        li {
+                            font-size: 13.5px;
+                            font-weight: 400;
+                            padding: 7px
+                        }
+
+                        .eventos-li-fechas {
+                            color: #f8c47b;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -217,12 +301,55 @@
         .header-div {
             padding: 20px;
             width: 300px;
+
             .header-tile {
                 font-size: 20px;
             }
 
             p {
                 font-size: 12px;
+            }
+        }
+    }
+
+
+            //------- MAIN ------//
+
+    // seccion eventos//
+    .seccion-eventos {
+        height: 500px;
+
+        .eventos-conteiner {
+            flex-direction: column;
+
+            img {
+                width: 320px
+            }
+
+            .eventos-text {
+
+                h3 {
+                    margin-top: 18px;
+                    font-size: 20px;
+                }
+
+                .eventos-listas {
+
+                    ul {
+                        padding: 10px;
+
+                        li {
+                            font-size: 12px;
+                            font-weight: 400;
+                            padding: 6px
+                        }
+
+                        .eventos-li-fechas {
+                            color: #f8c47b;
+                            font-weight: 300;
+                        }
+                    }
+                }
             }
         }
     }

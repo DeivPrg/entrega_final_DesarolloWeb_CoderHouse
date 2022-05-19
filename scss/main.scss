@@ -15,11 +15,70 @@
     font-size: 12px;
 }
 
+
+
 //====== NAV ======//
 @import "nav";
 
 //====== HEADER ======//
 @import "header";
+
+//----------------------------------------------------//
+// seccion eventos//
+.seccion-eventos{
+    width: 100%;
+    height: 750px;
+    background-image: url(../public/main/library_background_img.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .eventos-conteiner{
+        background-color: rgba(0, 0, 0, 0.507);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 550px
+        }
+
+        .eventos-text{
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .eventos-listas{
+                display: flex;
+
+                ul{
+                    padding: 30px;
+                    li{
+                        font-size: 16.5px;
+                        font-weight: 400;
+                        padding: 12px
+                    }
+
+                    .eventos-li-fechas{
+                        color: #f8c47b;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 //====== FOOTER ======//
 @import "footer";

@@ -88,7 +88,7 @@ nav {
 
 header {
   width: 100%;
-  height: 700px;
+  height: 750px;
   background-image: url(../public/main/title_background_img.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -97,8 +97,8 @@ header {
   align-items: center;
   justify-content: center; }
   header .header-div {
-    background-color: #f1b900;
-    color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);
     padding: 45px;
     width: 550px;
     display: flex;
@@ -108,6 +108,41 @@ header {
       margin-bottom: 20px; }
     header .header-div p {
       font-size: 17px; }
+
+.seccion-eventos {
+  width: 100%;
+  height: 750px;
+  background-image: url(../public/main/library_background_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .seccion-eventos .eventos-conteiner {
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .seccion-eventos .eventos-conteiner img {
+      width: 550px; }
+    .seccion-eventos .eventos-conteiner .eventos-text {
+      display: flex;
+      flex-direction: column; }
+      .seccion-eventos .eventos-conteiner .eventos-text h3 {
+        font-size: 24px;
+        text-align: center; }
+      .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas {
+        display: flex; }
+        .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul {
+          padding: 30px; }
+          .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul li {
+            font-size: 16.5px;
+            font-weight: 400;
+            padding: 12px; }
+          .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul .eventos-li-fechas {
+            color: #f8c47b;
+            font-weight: 300; }
 
 footer {
   width: 100%;
@@ -225,7 +260,22 @@ footer p {
       header .header-div .header-tile {
         font-size: 25px; }
       header .header-div p {
-        font-size: 14px; } }
+        font-size: 14px; }
+  .seccion-eventos {
+    height: 500px; }
+    .seccion-eventos .eventos-conteiner img {
+      width: 400px; }
+    .seccion-eventos .eventos-conteiner .eventos-text h3 {
+      font-size: 20px; }
+    .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul {
+      padding: 20px; }
+      .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul li {
+        font-size: 13.5px;
+        font-weight: 400;
+        padding: 7px; }
+      .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul .eventos-li-fechas {
+        color: #f8c47b;
+        font-weight: 300; } }
 
 @media (max-width: 768px) {
   /* ---------- NAV ---------- */
@@ -239,7 +289,26 @@ footer p {
       header .header-div .header-tile {
         font-size: 23px; }
       header .header-div p {
-        font-size: 13px; } }
+        font-size: 13px; }
+  .seccion-eventos {
+    height: 570px; }
+    .seccion-eventos .eventos-conteiner {
+      flex-direction: column;
+      margin: 30px 0; }
+      .seccion-eventos .eventos-conteiner img {
+        width: 340px; }
+      .seccion-eventos .eventos-conteiner .eventos-text h3 {
+        margin-top: 20px;
+        font-size: 20px; }
+      .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul {
+        padding: 15px; }
+        .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul li {
+          font-size: 13.5px;
+          font-weight: 400;
+          padding: 7px; }
+        .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul .eventos-li-fechas {
+          color: #f8c47b;
+          font-weight: 300; } }
 
 @media (max-width: 480px) {
   /* ---------- NAV ---------- */
@@ -275,4 +344,22 @@ footer p {
       header .header-div .header-tile {
         font-size: 20px; }
       header .header-div p {
-        font-size: 12px; } }
+        font-size: 12px; }
+  .seccion-eventos {
+    height: 500px; }
+    .seccion-eventos .eventos-conteiner {
+      flex-direction: column; }
+      .seccion-eventos .eventos-conteiner img {
+        width: 320px; }
+      .seccion-eventos .eventos-conteiner .eventos-text h3 {
+        margin-top: 18px;
+        font-size: 20px; }
+      .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul {
+        padding: 10px; }
+        .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul li {
+          font-size: 12px;
+          font-weight: 400;
+          padding: 6px; }
+        .seccion-eventos .eventos-conteiner .eventos-text .eventos-listas ul .eventos-li-fechas {
+          color: #f8c47b;
+          font-weight: 300; } }
