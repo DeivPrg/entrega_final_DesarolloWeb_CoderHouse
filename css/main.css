@@ -144,6 +144,32 @@ header {
             color: #f8c47b;
             font-weight: 300; }
 
+.seccion-estadisticas {
+  width: 100%;
+  height: 750px;
+  background-image: url(../public/main/stadistics_background_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .seccion-estadisticas .estadisticas-conteiner {
+    padding: 40px;
+    background-color: #2e2e2e; }
+    .seccion-estadisticas .estadisticas-conteiner h3 {
+      font-size: 24px;
+      text-align: center; }
+    .seccion-estadisticas .estadisticas-conteiner .estadisticas-text {
+      display: flex;
+      margin-top: 25px; }
+      .seccion-estadisticas .estadisticas-conteiner .estadisticas-text .estadisticas-articulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        background-color: #f8c47b; }
+
 footer {
   width: 100%;
   background-color: black;
